@@ -3,6 +3,7 @@
 //     .then(data => console.log(data))
 //     .catch(error => console.error(error));
 
+
 async function fetchData() {
     const inputName = document.getElementById('inputValue').value.toLowerCase();
     let pokiImg = document.getElementById('pokiImg');
@@ -13,12 +14,13 @@ async function fetchData() {
             throw new Error("Could not fetch this Pokemon");
         }
         let data = await response.json();
+        let imgName = await data.sprites.front_default;
+        pokiImg.src = await imgName;
+        pokiImg.style.display = "block";
         let name = data.name;
         let type = data.types[0].type.name;
         let weight = data.weight;
-        let imgName = data.sprites.front_default;
-        pokiImg.src = imgName;
-        pokiImg.style.display = "block";
+        
         let nameTag = document.querySelectorAll('h5')[0];
         let typeName = document.querySelectorAll('h5')[1];
         let weightTag = document.querySelectorAll('h5')[2];

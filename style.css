@@ -1,7 +1,7 @@
 body{
     background-image: url(Bg.jpeg);
-    background-size: 500px;
-    background-repeat: repeat-x;
+    background-size: cover;
+    
 }
 
 .input{
@@ -29,6 +29,13 @@ button{
     font-size: 0.8rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(123, 52%, 49%);
+}
+button:active{
+    background-color: hsl(123, 57%, 30%);
 }
 img {
     margin-inline: auto;
