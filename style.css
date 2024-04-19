@@ -20,7 +20,7 @@ body{
     font-size: 0.8rem;
 }
 
-button{
+#submit{
     border-radius: 8px;
     background-color: hsl(120, 61%, 53%);
     border: none;
@@ -31,7 +31,24 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+#modeBtn button{
+    border-radius: 8px;
+    background-color: hsl(44, 61%, 53%);
+    border: none;
+    width: 70px;
+    height: 25px;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer; 
+}
+
+#modeBtn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#submit:hover{
     background-color: hsl(123, 52%, 49%);
 }
 button:active{

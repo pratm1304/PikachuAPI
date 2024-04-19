@@ -12,7 +12,7 @@
     <div class="input">
         <label for="inputValue">Enter Pokemon Name: </label>
         <input type="text" id="inputValue" placeholder="eg. pikachu">
-        <button onclick="fetchData()">Submit</button>
+        <button id="submit" onclick="fetchData()">Submit</button>
     </div>
 
     <div class="box" style="display: none;">
@@ -20,6 +20,10 @@
         <h5 style="text-align: center; display: none;">Name → </h5>
         <h5 style="text-align: center; display: none;">Type → </h5>
         <h5 style="text-align: center; display: none;">Weight → </h5>
+    </div>
+    
+    <div id="modeBtn">
+        <button onclick="changeMode()" id="mode">Mode</button>
     </div>
     <h4 style=" font-weight:100; margin-top: 6rem; text-align: center;">Made by Pratham 🍂</h4>
     

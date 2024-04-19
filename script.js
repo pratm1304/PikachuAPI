@@ -13,6 +13,7 @@ async function fetchData() {
         if (!response.ok) {
             throw new Error("Could not fetch this Pokemon");
         }
+        
         let data = await response.json();
         let imgName = await data.sprites.front_default;
         pokiImg.src = await imgName;
@@ -37,6 +38,30 @@ async function fetchData() {
         console.error('Fetch error:', error);
        
     }
+}
+let dark = false;
+function changeMode(){
+    dark = !dark;
+    if(dark){
+        document.querySelector('body').style.backgroundImage = "url('Bg.jpeg')";
+    document.querySelector('body').style.color = "black";
+    document.querySelectorAll('h5')[0].style.color = "black";
+    document.querySelectorAll('h5')[1].style.color = "black";
+    document.querySelectorAll('h5')[2].style.color = "black";
+    document.querySelector('.box').style.backgroundColor = "hsla(55, 62%, 70%, 0.193)";
+    document.querySelector('.box').style.border = "1px solid hsl(50, 68%, 64%)";
+    }
+    else {
+        document.querySelector('body').style.backgroundImage = "url('darkBg.jpeg')";
+    document.querySelector('body').style.color = "aliceblue";
+    document.querySelectorAll('h5')[0].style.color = "aliceblue";
+    document.querySelectorAll('h5')[1].style.color = "aliceblue";
+    document.querySelectorAll('h5')[2].style.color = "aliceblue";
+    document.querySelector('.box').style.backgroundColor = "hsla(0, 0%, 0%, 0.4)";
+    document.querySelector('.box').style.border = "1px solid aliceblue";
+    }
+    
+    
 }
 
 
