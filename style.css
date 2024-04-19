@@ -31,7 +31,7 @@ button{
 img {
     margin-inline: auto;
     margin-top: 1rem;
-    width: 40%;
+    width: 30%;
     margin-bottom: 0;
 }
 
@@ -41,7 +41,7 @@ img {
     border: 1px solid hsl(50, 68%, 64%);
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    width: 60%;
+    width: 50%;
     margin-inline: auto;
     padding: 10px;
     border-radius: 50px;
