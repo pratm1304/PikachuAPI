@@ -1,0 +1,48 @@
+body{
+    background-image: url(Bg.jpeg);
+    background-size: cover;
+}
+
+.input{
+    margin: 2rem;
+    
+}
+
+#inputValue{
+    width: 12rem;
+    height: 1.3rem;
+    margin-inline: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid rgb(110, 186, 234);
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+button{
+    border-radius: 8px;
+    background-color: hsl(120, 61%, 53%);
+    border: none;
+    width: 70px;
+    height: 25px;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+}
+img {
+    margin-inline: auto;
+    margin-top: 1rem;
+    width: 40%;
+    margin-bottom: 0;
+}
+
+.box{
+    
+    background-color: hsla(55, 62%, 70%, 0.193);
+    border: 1px solid hsl(50, 68%, 64%);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    width: 60%;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 50px;
+}
